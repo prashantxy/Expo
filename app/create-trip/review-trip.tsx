@@ -55,7 +55,7 @@ const ReviewTrip = () => {
 
         {renderReviewItem(
           "Destination",
-          locationInfo?.name || "Not selected",
+          locationInfo?.name || "selected",
           <Ionicons name="location-sharp" size={24} color="#8b5cf6" />,
           "/create-trip/search-place"
         )}
@@ -93,7 +93,7 @@ const ReviewTrip = () => {
       <View className="p-6">
         <CustomButton
           title="Build an itinerary"
-          onPress={() => router.replace("/generate-trip")}
+          onPress={() => router.replace("/mytrip")}
         />
       </View>
     </SafeAreaView>
